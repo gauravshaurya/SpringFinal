@@ -1,0 +1,8 @@
+@charset "ISO-8859-1";
+
+body {
+  background-image: url("/img/bg.jpeg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
+}
+</style>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+      
+    <bean id="eObj" class="com.iris.Spring1.Engine">
+    	<constructor-arg value="111"/>
+    	<constructor-arg value="Briggs and Stratton"/>
+    	<constructor-arg value="1500"/>
+    </bean>
+    
+    <bean id="vObj" class="com.iris.Spring1.Vehicle">
+    	<property name="vehicleId" value="555"/>
+    	<property name="vehicleType" value="Four Wheeler"/>
+    	<property name="engine" ref="eObj"/>
+    </bean>
+                
+</beans>
